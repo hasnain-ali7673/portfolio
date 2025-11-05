@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hasnain Ali - Web Developer Portfolio">
+    <title>Hasnain Ali | Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="nav-overlay"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar glass-card">
+        <div class="container">
+            <div class="nav-content">
+                <!-- Enhanced Logo -->
+                <a href="#" class="nav-logo">
+                    <div class="logo-icon">
+                        <span class="logo-text">H</span>
+                        <span class="logo-text">A</span>
+                    </div>
+                    <div class="logo-name">
+                        <span class="name-main">Hasnain</span>
+                        <span class="name-dot">.</span>
+                    </div>
+                </a>
+                
+                <!-- Hamburger Menu Button -->
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+                
+                <div class="nav-links">
+                    <!-- Mobile Menu Header -->
+                    <div class="mobile-menu-header">
+                        <div class="mobile-logo">
+                            <span class="logo-text">H</span>
+                            <span class="logo-text">A</span>
+                        </div>
+                        <button class="nav-close" aria-label="Close navigation menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <!-- Navigation Links -->
+                    <a href="#about" class="nav-link" data-text="About">
+                        <span class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </span>
+                        <span class="link-text">About</span>
+                    </a>
+                    <a href="#skills" class="nav-link" data-text="Skills">
+                        <span class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </span>
+                        <span class="link-text">Skills</span>
+                    </a>
+                    <a href="#projects" class="nav-link" data-text="Projects">
+                        <span class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </span>
+                        <span class="link-text">Projects</span>
+                    </a>
+                    <a href="#experience" class="nav-link" data-text="Experience">
+                        <span class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </span>
+                        <span class="link-text">Experience</span>
+                    </a>
+                    <a href="#contact" class="nav-link nav-link-highlight">
+                        <span class="link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </span>
+                        <span class="link-text">Contact Me</span>
+                    </a>
+                    
+                    <!-- Mobile Menu Footer -->
+                    <div class="mobile-menu-footer">
+                        <div class="footer-social">
+                            <a href="https://github.com/hasnain-ali7673" target="_blank" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com/in/hasnainali" target="_blank" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                                </svg>
+                            </a>
+                            <a href="mailto:hasnainali7673@outlook.com" aria-label="Email">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">Available for Opportunities</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-line">Hi, I'm</span>
+                    <span class="title-name">HASNAIN ALI</span>
+                    <span class="title-role">Web Developer</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Dedicated Web Development Professional with expertise in <span class="highlight-text">HTML, CSS, and Responsive Design</span>. 
+                    Actively expanding skills with <span class="highlight-text">React JS</span> to build modern, scalable web applications.
+                </p>
+
+                <div class="hero-cta">
+                    <a href="mailto:hasnainali7673@outlook.com" class="btn btn-primary">
+                        <span class="btn-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </span>
+                        <span>Get In Touch</span>
+                    </a>
+                    <a href="https://linkedin.com/in/hasnainali" class="btn btn-secondary" target="_blank">
+                        <span class="btn-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                            </svg>
+                        </span>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+
+                <div class="scroll-indicator">
+                    <div class="scroll-icon">
+                        <div class="scroll-wheel"></div>
+                    </div>
+                    <span class="scroll-text">Scroll to explore</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">About Me</span>
+                <h2 class="section-title">Building Digital Experiences</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-main glass-card">
+                    <div class="about-image-wrapper">
+                        <div class="about-image">
+                            <img src="Picsart_24-02-04_12-03-22-093.png" alt="Hasnain Ali - Web Developer" class="profile-image">
+                        </div>
+                        <div class="about-badges">
+                            <div class="about-badge">
+                                <span class="badge-number">2+</span>
+                                <span class="badge-text">Years Experience</span>
+                            </div>
+                            <div class="about-badge">
+                                <span class="badge-number">10+</span>
+                                <span class="badge-text">Projects Done</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-details">
+                        <h3 class="about-subtitle">Crafting Modern Web Solutions</h3>
+                        <p class="about-text">
+                            Passionate about creating <strong>dynamic and responsive web applications</strong> that deliver 
+                            exceptional user experiences. My foundation is built on robust training in 
+                            <strong>Front End Development (HTML/CSS)</strong> and specialized skills like 
+                            <strong>Web Scraping with Python</strong>.
+                        </p>
+                        <p class="about-text">
+                            Currently pursuing <strong>Software Engineering</strong> at Sindh Madressatul Islam University, 
+                            I combine academic knowledge with hands-on experience from my internship at Code Alpha. 
+                            I'm committed to continuous learning, currently mastering <strong>React JS</strong> to build 
+                            modern, scalable applications.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Clean, maintainable code</span>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Responsive design principles</span>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Modern web technologies</span>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <span>Performance optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What I Do Section -->
+    <section class="section services-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Services</span>
+                <h2 class="section-title">What I Do</h2>
+                <p class="section-description">Specialized in creating beautiful, functional websites and web applications</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card glass-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">
+                        Building responsive, fast, and user-friendly websites using modern HTML5, CSS3, and JavaScript. 
+                        Focus on clean code and best practices.
+                    </p>
+                    <ul class="service-features">
+                        <li>Responsive Design</li>
+                        <li>Cross-Browser Compatible</li>
+                        <li>SEO Optimized</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-description">
+                        Creating intuitive and engaging user interfaces with attention to detail. 
+                        Ensuring seamless user experience across all devices.
+                    </p>
+                    <ul class="service-features">
+                        <li>Modern Aesthetics</li>
+                        <li>User-Centered Design</li>
+                        <li>Interactive Elements</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">React Development</h3>
+                    <p class="service-description">
+                        Building dynamic single-page applications with React JS. 
+                        Component-based architecture for scalable and maintainable code.
+                    </p>
+                    <ul class="service-features">
+                        <li>Component-Based</li>
+                        <li>State Management</li>
+                        <li>Reusable Code</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Web Scraping</h3>
+                    <p class="service-description">
+                        Automated data extraction from websites using Python. 
+                        Clean, structured data collection for analysis and processing.
+                    </p>
+                    <ul class="service-features">
+                        <li>Python-Based</li>
+                        <li>Data Automation</li>
+                        <li>Clean Datasets</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My Expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category glass-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Technical Skills</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React JS</span>
+                                <span class="skill-level learning">Learning</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress learning" style="--progress: 50%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL Database</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 65%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="soft-skills">
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon">✓</div>
+                            <div class="soft-skill-text">Problem-Solving</div>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon">✓</div>
+                            <div class="soft-skill-text">Team Worker</div>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon">✓</div>
+                            <div class="soft-skill-text">Quick Learner</div>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon">✓</div>
+                            <div class="soft-skill-text">Detail-Oriented</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience-section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Career Journey</span>
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-description">My professional path and growth as a developer</p>
+            </div>
+
+            <div class="experience-wrapper">
+                <div class="timeline-line"></div>
+                
+                <div class="experience-item">
+                    <div class="experience-card glass-card">
+                        <div class="experience-header">
+                            <div class="experience-icon-wrapper">
+                                <div class="experience-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="16 18 22 12 16 6"></polyline>
+                                        <polyline points="8 6 2 12 8 18"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="experience-duration">
+                                    <span class="duration-badge">Current Role</span>
+                                </div>
+                            </div>
+                            <div class="experience-title-group">
+                                <h3 class="experience-role">Web Developer Intern</h3>
+                                <div class="experience-meta">
+                                    <span class="experience-company">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                        </svg>
+                                        Code Alpha
+                                    </span>
+                                    <span class="experience-date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        April 2024
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="experience-body">
+                            <p class="experience-description">
+                                Designed and implemented user interfaces using <span class="highlight-accent">HTML, CSS, and JavaScript</span>, 
+                                ensuring responsive and visually appealing web pages. Collaborated with the development 
+                                team to deliver high-quality projects on schedule.
+                            </p>
+                            
+                            <div class="experience-achievements">
+                                <h4 class="achievements-title">Key Achievements</h4>
+                                <ul class="achievements-list">
+                                    <li>
+                                        <span class="achievement-icon">▹</span>
+                                        Built responsive web applications with modern UI/UX principles
+                                    </li>
+                                    <li>
+                                        <span class="achievement-icon">▹</span>
+                                        Ensured cross-browser compatibility and mobile responsiveness
+                                    </li>
+                                    <li>
+                                        <span class="achievement-icon">▹</span>
+                                        Collaborated in agile development environment
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="experience-skills">
+                                <span class="skill-badge">HTML5</span>
+                                <span class="skill-badge">CSS3</span>
+                                <span class="skill-badge">JavaScript</span>
+                                <span class="skill-badge">Responsive Design</span>
+                                <span class="skill-badge">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-card glass-card">
+                        <div class="experience-header">
+                            <div class="experience-icon-wrapper">
+                                <div class="experience-icon secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                    </svg>
+                                </div>
+                                <div class="experience-duration">
+                                    <span class="duration-badge secondary">1 Year</span>
+                                </div>
+                            </div>
+                            <div class="experience-title-group">
+                                <h3 class="experience-role">Ticketing Agent</h3>
+                                <div class="experience-meta">
+                                    <span class="experience-company">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                        </svg>
+                                        Fazal-E-Haq Travels
+                                    </span>
+                                    <span class="experience-date">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        Dec 2021 - Dec 2022
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="experience-body">
+                            <p class="experience-description">
+                                Managed domestic and international ticketing operations with precision. 
+                                Completed certified <span class="highlight-accent">Galileo travel booking system course</span>, 
+                                demonstrating adaptability and technical learning capacity in a fast-paced environment.
+                            </p>
+                            
+                            <div class="experience-achievements">
+                                <h4 class="achievements-title">Key Achievements</h4>
+                                <ul class="achievements-list">
+                                    <li>
+                                        <span class="achievement-icon">▹</span>
+                                        Certified in Galileo travel booking system
+                                    </li>
+                                    <li>
+                                        <span class="achievement-icon">▹</span>
+                                        Managed high-volume ticketing operations efficiently
+                                    </li>
+                                    <li>
+                                        <span class="achievement-icon">▹</span>
+                                        Provided excellent customer service and support
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="experience-skills">
+                                <span class="skill-badge">Customer Service</span>
+                                <span class="skill-badge">Galileo System</span>
+                                <span class="skill-badge">Time Management</span>
+                                <span class="skill-badge">Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">Showcasing my best work in web development and design</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-category">Web Application</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Expense Tracker</h3>
+                        <p class="project-description">
+                            A comprehensive financial management web app that tracks expenses and income with an intuitive transaction 
+                            entry system. Features dynamic balance updates and organized income/expense segregation for informed decision-making.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/hasnain-ali7673/CodeAlpha_Expense_Tracker" target="_blank" rel="noopener" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-category">Dashboard</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Social Media Dashboard</h3>
+                        <p class="project-description">
+                            A centralized platform for monitoring social media metrics across Instagram, YouTube, and Facebook. 
+                            Features interactive charts with ApexCharts, trend visualization, and comprehensive analytics for data-driven insights.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">ApexCharts</span>
+                        </div>
+                        <a href="https://github.com/hasnain-ali7673/CodeAlpha_Social_Media_Dashboard" target="_blank" rel="noopener" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-category">Utility Tool</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Age Calculator</h3>
+                        <p class="project-description">
+                            A user-friendly web application that accurately calculates age based on date of birth. 
+                            Features an intuitive date picker interface and displays results in years, months, and days format for precise age determination.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/hasnain-ali7673/Age_Calculator-Website" target="_blank" rel="noopener" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 11l3 3L22 4"></path>
+                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                            </svg>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-category">Productivity</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">To-Do List Manager</h3>
+                        <p class="project-description">
+                            A clean and intuitive task management application for organizing daily activities. 
+                            Features include task creation with headings, descriptions, due dates, and a responsive interface for seamless task tracking.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/hasnain-ali7673/CodeAlpha_To_Do_List_Website" target="_blank" rel="noopener" class="project-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card glass-card">
+                    <div class="stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Work Experiences</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="stat-number">4+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <div class="stat-number">8+</div>
+                    <div class="stat-label">Technologies Mastered</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Dedication</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="section education-section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Academic & Professional</span>
+                <h2 class="section-title">Education & Certifications</h2>
+                <p class="section-description">My academic background and professional certifications</p>
+            </div>
+
+            <div class="edu-cert-wrapper">
+                <!-- Education Card -->
+                <div class="education-main-card glass-card">
+                    <div class="edu-card-header">
+                        <div class="edu-icon-wrapper">
+                            <div class="edu-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="edu-header-text">
+                            <h3 class="edu-main-title">Education</h3>
+                            <p class="edu-subtitle">Academic Journey</p>
+                        </div>
+                    </div>
+                    
+                    <div class="edu-card-body">
+                        <div class="edu-degree-card">
+                            <div class="degree-icon-bg">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                </svg>
+                            </div>
+                            <div class="degree-content">
+                                <span class="degree-badge">Bachelor's Degree</span>
+                                <h4 class="degree-name">Software Engineering</h4>
+                                <div class="degree-meta">
+                                    <div class="degree-institution">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                        </svg>
+                                        Sindh Madressatul Islam University
+                                    </div>
+                                    <div class="degree-period">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        February 2023 - Present
+                                    </div>
+                                </div>
+                                
+                                <!-- Progress Indicator -->
+                                <div class="degree-progress">
+                                    <div class="progress-label">
+                                        <span>Completion Progress</span>
+                                        <span class="progress-percentage">40%</span>
+                                    </div>
+                                    <div class="progress-track">
+                                        <div class="progress-fill" style="--progress: 40%;"></div>
+                                        <div class="progress-orb"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="degree-status">
+                                    <div class="status-indicator pulsing"></div>
+                                    <span>Currently Pursuing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications Card -->
+                <div class="certifications-main-card glass-card">
+                    <div class="cert-card-header">
+                        <div class="cert-icon-wrapper">
+                            <div class="cert-main-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="8" r="7"></circle>
+                                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cert-header-text">
+                            <h3 class="cert-main-title">Certifications</h3>
+                            <p class="cert-subtitle">Professional Credentials</p>
+                        </div>
+                        <div class="cert-count-badge">
+                            <span class="count-number">4</span>
+                            <span class="count-label">Certified</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-card-body">
+                        <div class="cert-list-grid">
+                            <div class="cert-card-item">
+                                <div class="cert-ribbon">
+                                    <span>HTML</span>
+                                </div>
+                                <div class="cert-seal">
+                                    <div class="seal-inner">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="cert-item-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="cert-item-content">
+                                    <h5 class="cert-item-name">Front End Development - HTML</h5>
+                                    <p class="cert-item-org">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                        </svg>
+                                        Great Learning Academy
+                                    </p>
+                                </div>
+                                <div class="cert-verified-badge">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="cert-card-item">
+                                <div class="cert-ribbon">
+                                    <span>CSS</span>
+                                </div>
+                                <div class="cert-seal">
+                                    <div class="seal-inner">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="cert-item-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="cert-item-content">
+                                    <h5 class="cert-item-name">Front End Development - CSS</h5>
+                                    <p class="cert-item-org">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                        </svg>
+                                        Great Learning Academy
+                                    </p>
+                                </div>
+                                <div class="cert-verified-badge">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="cert-card-item">
+                                <div class="cert-ribbon">
+                                    <span>Python</span>
+                                </div>
+                                <div class="cert-seal">
+                                    <div class="seal-inner">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="cert-item-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="cert-item-content">
+                                    <h5 class="cert-item-name">Web Scraping with Python</h5>
+                                    <p class="cert-item-org">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                        </svg>
+                                        Great Learning Academy
+                                    </p>
+                                </div>
+                                <div class="cert-verified-badge">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="cert-card-item">
+                                <div class="cert-ribbon">
+                                    <span>Travel</span>
+                                </div>
+                                <div class="cert-seal">
+                                    <div class="seal-inner">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="cert-item-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="cert-item-content">
+                                    <h5 class="cert-item-name">Galileo Core Course & Global Fares</h5>
+                                    <p class="cert-item-org">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                        </svg>
+                                        Travel Port
+                                    </p>
+                                </div>
+                                <div class="cert-verified-badge">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section - Redesigned -->
+    <section class="section contact-section" id="contact">
+        <!-- Animated Background Gradient -->
+        <div class="contact-bg-gradient"></div>
+        
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Let's Create Something Amazing</h2>
+                <p class="section-description">Ready to bring your ideas to life? Drop me a message and let's start a conversation!</p>
+            </div>
+
+            <!-- Quick Contact Methods -->
+            <div class="quick-contact-methods">
+                <a href="mailto:hasnainali7673@outlook.com" class="quick-contact-btn">
+                    <div class="quick-btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <div class="quick-btn-content">
+                        <span class="quick-btn-label">Email Me</span>
+                        <span class="quick-btn-value">hasnainali7673@outlook.com</span>
+                    </div>
+                    <div class="quick-btn-arrow">→</div>
+                </a>
+
+                <a href="https://linkedin.com/in/hasnainali" target="_blank" class="quick-contact-btn">
+                    <div class="quick-btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                        </svg>
+                    </div>
+                    <div class="quick-btn-content">
+                        <span class="quick-btn-label">Connect on LinkedIn</span>
+                        <span class="quick-btn-value">linkedin.com/in/hasnainali</span>
+                    </div>
+                    <div class="quick-btn-arrow">→</div>
+                </a>
+
+                <a href="https://github.com/hasnain-ali7673" target="_blank" class="quick-contact-btn">
+                    <div class="quick-btn-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </div>
+                    <div class="quick-btn-content">
+                        <span class="quick-btn-label">View My Code</span>
+                        <span class="quick-btn-value">github.com/hasnain-ali7673</span>
+                    </div>
+                    <div class="quick-btn-arrow">→</div>
+                </a>
+            </div>
+
+            <!-- Main Contact Content -->
+            <div class="contact-main-wrapper">
+                <!-- Left Side - Info & Social -->
+                <div class="contact-info-side">
+                    <!-- Availability Card -->
+                    <div class="availability-card glass-card">
+                        <div class="availability-header">
+                            <div class="availability-status">
+                                <div class="status-dot pulsing"></div>
+                                <span>Available for Work</span>
+                            </div>
+                            <div class="response-badge">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14">
+                                    <polyline points="23 4 23 10 17 10"></polyline>
+                                    <polyline points="1 20 1 14 7 14"></polyline>
+                                    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                                </svg>
+                                <span>24h</span>
+                            </div>
+                        </div>
+                        <p class="availability-text">Open to freelance projects and full-time opportunities</p>
+                    </div>
+
+                    <!-- Location Card -->
+                    <div class="location-card glass-card">
+                        <div class="location-icon-wrapper">
+                            <div class="location-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="location-content">
+                            <h4>Based in Karachi</h4>
+                            <p>Pakistan</p>
+                            <span class="location-tag">🌍 Available for Remote Work</span>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links-card glass-card">
+                        <h4 class="social-title">Follow Me</h4>
+                        <div class="social-links-grid">
+                            <a href="https://github.com/hasnain-ali7673" target="_blank" class="social-link" data-tooltip="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com/in/hasnainali" target="_blank" class="social-link" data-tooltip="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                                </svg>
+                            </a>
+                            <a href="mailto:hasnainali7673@outlook.com" class="social-link" data-tooltip="Email">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" data-tooltip="Twitter">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Why Work With Me -->
+                    <div class="why-work-card glass-card">
+                        <h4>Why Work With Me?</h4>
+                        <ul class="why-list">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Fast response time</span>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Quality code delivery</span>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Flexible & collaborative</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Side - Contact Form -->
+                <div class="contact-form-side glass-card">
+                    <div class="form-header">
+                        <div class="form-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="form-main-title">Send Me a Message</h3>
+                            <p class="form-subtitle">I'll get back to you within 24 hours</p>
+                        </div>
+                    </div>
+
+                    <form class="contact-form-new" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-row">
+                            <div class="form-field">
+                                <input type="text" id="name" name="name" class="modern-input" required>
+                                <label for="name" class="floating-label">Full Name *</label>
+                                <div class="input-border"></div>
+                            </div>
+
+                            <div class="form-field">
+                                <input type="email" id="email" name="email" class="modern-input" required>
+                                <label for="email" class="floating-label">Email Address *</label>
+                                <div class="input-border"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-field">
+                            <input type="text" id="subject" name="subject" class="modern-input" required>
+                            <label for="subject" class="floating-label">Subject *</label>
+                            <div class="input-border"></div>
+                        </div>
+
+                        <div class="form-field">
+                            <textarea id="message" name="message" class="modern-textarea" rows="4" required></textarea>
+                            <label for="message" class="floating-label">Your Message *</label>
+                            <div class="input-border"></div>
+                        </div>
+
+                        <button type="submit" class="modern-submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-icon-wrap">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </span>
+                            <div class="btn-ripple"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - Redesigned -->
+    <footer class="footer">
+        <!-- Footer CTA Section -->
+        <div class="footer-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <div class="cta-text">
+                        <h2 class="cta-title">Let's Build Something Amazing Together</h2>
+                        <p class="cta-description">Have a project in mind? I'm always open to discussing new ideas and opportunities.</p>
+                    </div>
+                    <div class="cta-actions">
+                        <a href="#contact" class="cta-button primary">
+                            <span>Start a Project</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="mailto:hasnainali7673@outlook.com" class="cta-button secondary">
+                            <span>Send Email</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Main Content -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- About Column -->
+                    <div class="footer-column">
+                        <div class="footer-brand">
+                            <h3 class="brand-name">Hasnain Ali</h3>
+                            <p class="brand-tagline">Web Developer & Designer</p>
+                        </div>
+                        <p class="footer-about">
+                            Passionate about creating beautiful, functional web experiences. Specializing in front-end development with a focus on clean code and user-centric design.
+                        </p>
+                        <div class="footer-social">
+                            <a href="https://github.com/hasnain-ali7673" target="_blank" class="social-icon" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                            <a href="https://linkedin.com/in/hasnainali" target="_blank" class="social-icon" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                                </svg>
+                            </a>
+                            <a href="mailto:hasnainali7673@outlook.com" class="social-icon" aria-label="Email">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links Column -->
+                    <div class="footer-column">
+                        <h4 class="column-title">Quick Links</h4>
+                        <ul class="footer-links-list">
+                            <li>
+                                <a href="#about" class="footer-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                    <span>About Me</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#skills" class="footer-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                    <span>Skills & Expertise</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#projects" class="footer-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                    <span>Projects</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#experience" class="footer-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                    <span>Experience</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#education" class="footer-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                    <span>Education</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact" class="footer-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                    <span>Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tech Stack Column -->
+                    <div class="footer-column">
+                        <h4 class="column-title">Tech Stack</h4>
+                        <div class="tech-badges">
+                            <span class="tech-badge">HTML5</span>
+                            <span class="tech-badge">CSS3</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Bootstrap</span>
+                            <span class="tech-badge">Git</span>
+                        </div>
+                        <div class="footer-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">4+</div>
+                                <div class="stat-label">Projects</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">2</div>
+                                <div class="stat-label">Years Exp</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">8+</div>
+                                <div class="stat-label">Technologies</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2025 <span class="highlight-text">Hasnain Ali</span>. All rights reserved.</p>
+                    </div>
+                    <div class="footer-meta">
+                        <span class="footer-love">
+                            Designed & Built with 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="heart-icon">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                            and CSS magic
+                        </span>
+                    </div>
+                    <div class="footer-location">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Karachi, Pakistan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </a>
+
+  
+
+</body>
+</html>
+
